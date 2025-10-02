@@ -28,7 +28,7 @@ addBtn.addEventListener('click', () => {
 
     const text = document.createElement('h1');
     text.innerText = newText;
-    text.className = 'text-[18px] text-gray-800';
+    text.className = 'text-[18px] text-blue-800';
     const editBtn = document.createElement('button');
     editBtn.innerText = 'Tahrirlash';
     editBtn.className = 'text-green-600 font-bold mr-[10px]';
