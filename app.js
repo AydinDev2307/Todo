@@ -15,9 +15,9 @@ addBtn.className =
   'w-[100px] h-[50px] bg-blue-500 rounded-[14px] text-white font-[600]';
 addBtn.innerText = "Qo'shish";
 inputBox.append(input, addBtn);
-const listContainer = document.createElement('div');
-listContainer.className = 'm-[20px] w-[550px] flex flex-col gap-[10px]';
-parent.append(listContainer);
+const listBox = document.createElement('div');
+listBox.className = 'm-[20px] w-[550px] flex flex-col gap-[10px]';
+parent.append(listBox);
 
 addBtn.addEventListener('click', () => {
   const newText = input.value.trim();
@@ -48,7 +48,7 @@ addBtn.addEventListener('click', () => {
     btnBox.className = 'flex gap-[10px]';
     btnBox.append(editBtn, deleteBtn);
     list.append(text, btnBox);
-    listContainer.append(list);
+    listBox.append(list);
     input.value = '';
   }
 });
